@@ -1,0 +1,23 @@
+{% extends 'layouts/default.html' %}
+
+{% block title %}
+	{{ super() }} - {{post.title}}
+{% endblock %}
+
+{% block body %}
+
+	<h1>Blog</h1>
+
+	<article>
+		<h2>#{{ post.id }} - {{post.title}}</h2>
+
+		<p>
+			{{ post.content }}
+		</p>
+	</article>
+
+	<p>
+		<a href="{{ url_for('posts_index') }}">All posts</a>
+	</p>
+
+{% endblock %}

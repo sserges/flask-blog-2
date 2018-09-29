@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>{% block title %}ACME{% endblock %}</title>
+		<!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}"> -->
+	</head>
+	<body>
+		{% include 'layouts/partials/_nav.html' %}
+
+		{% block body %}
+		{% endblock %}
+
+		{% include 'layouts/partials/_footer.html' %}
+	</body>
+</html>
