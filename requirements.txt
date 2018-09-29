@@ -36,3 +36,4 @@ Werkzeug==0.14.1
 WTForms==2.1
 gunicorn
 psycopg2
+sentry-sdk[flask]==0.3.6
