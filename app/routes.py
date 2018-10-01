@@ -7,7 +7,6 @@ from .models import Post
 
 @app.route('/')
 def home():
-    lll
     return render_template('pages/home.html')
 
 
